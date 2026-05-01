@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.bin
+*.pt
+*.ckpt
+*.safetensors
+model/
+marian_ar_en/
+final_marian_model/
