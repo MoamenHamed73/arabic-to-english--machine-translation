@@ -34,8 +34,32 @@ The model is evaluated using BLEU score:
 This indicates a reasonable translation quality for a fine-tuned medium-scale model.
 
 ---
+## Install required libraries:
 
- 
+```bash
+pip install transformers torch sentencepiece huggingface_hub
+
+ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+model_name = "moamehamed7/arabic-to-english-model"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+
+text = "أنا أحب تعلم الذكاء الاصطناعي"
+
+inputs = tokenizer(text, return_tensors="pt")
+
+outputs = model.generate(
+    inputs["input_ids"],
+    max_length=50,
+    num_beams=5
+)
+
+translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+print("English Translation:", translation)
+
 ## 🛠 Tech Stack
 
 Python 🐍
