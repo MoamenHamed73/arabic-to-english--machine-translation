@@ -35,24 +35,8 @@ This indicates a reasonable translation quality for a fine-tuned medium-scale mo
 
 ---
 
-## 🔧 Installation
-
-Clone the repository:
-pip install -r requirements.txt
-
-from transformers import pipeline
-
-translator = pipeline(
-    "translation",
-    model="moamehamed7/arabic-to-english-model"
-)
-
-text = "مرحبا كيف حالك اليوم"
-result = translator(text)
-
-print(result[0]['translation_text'])
-
-🛠 Tech Stack
+ 
+## 🛠 Tech Stack
 
 Python 🐍
 PyTorch
@@ -60,7 +44,7 @@ Hugging Face Transformers 🤗
 MarianMT Model
 Google Colab / VS Code
 
-🎯 Project Highlights
+## 🎯 Project Highlights
 
 End-to-End NLP pipeline
 Fine-tuned Transformer model
@@ -68,7 +52,7 @@ Real-world machine translation system
 Model deployment using Hugging Face Hub
 Production-style ML project
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Moamen Hamed
 AI & Machine Learning Enthusiast
