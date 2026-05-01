@@ -53,22 +53,23 @@ result = translator(text)
 print(result[0]['translation_text'])
 
 🛠 Tech Stack
+
 Python 🐍
 PyTorch
 Hugging Face Transformers 🤗
 MarianMT Model
 Google Colab / VS Code
+
 🎯 Project Highlights
+
 End-to-End NLP pipeline
 Fine-tuned Transformer model
 Real-world machine translation system
 Model deployment using Hugging Face Hub
 Production-style ML project
+
 👨‍💻 Author
 
 Moamen Hamed
 AI & Machine Learning Enthusiast
 
-```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
-cd REPO_NAME
